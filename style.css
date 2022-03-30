@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/image/4964560.jpg");
+}
+header {
+  margin-bottom: 19px;
+  text-align: center;
+}
+header h1{
+    margin-bottom: 9px;
+}
+p {
+  text-indent: 9px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+ul{
+    display: inline-block;
+    border: 2px solid rgb(196, 93, 33);
+    border-radius: 4px;
+}
+ul:hover{
+    transition:s2s;
+  border: none;
+  transform: translate(4px, 4px);
+  color:aquamarine;
+}
+.section-1 h2:hover{
+    transition: all 4s;
+    transform: rotate(30deg);
+    color: palevioletred;
+    cursor: pointer;
+}
+
+
+strong{
+    margin-left: 9px;
+}
+strong:hover{
+    display: block;
+    transform: scale(2);
+    cursor: pointer;
+    color: rgb(127, 21, 131);
+}
+strong::after {
+  content: "👋";
+}
+.photo {
+    display: inline-block; 
+    position: relative;
+    cursor: pointer;
+   }
+   .photo:hover::after {
+    content: attr(data-title); 
+    position: absolute; 
+    left: 19%; bottom: 79%;
+    z-index: 1; 
+    background: rgba(255,255,230,0.9); 
+    font-family: Arial, sans-serif; 
+    font-size: 11px; 
+    padding: 9px 9px;
+    border: 2px solid #333; 
+}
+.photo::after{
+    content: attr(data-title);
+}
+.photo:hover::after{
+    cursor: pointer;
+    content: attr(data-title);
+}
+
+img{
+    max-width: 209px;
+    margin-bottom: 9px;
+}
+.section-2 img{
+    padding:9px;
+    background-color: silver;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+}
+.section-1 {
+  width: 49%;
+  border: 2px solid purple;
+  margin-bottom: 19px;
+  background-color:rgb(47, 166, 170);
+}
+ .section-1 h2{
+     text-align: center;
+ }
+.section-1  img{
+    border-radius: 49%;
+    border: 2px solid sienna;
+    margin: 9px;
+}
+
+
+.section-2 {
+  width: 49%;
+  background-color: rgb(65, 180, 61);
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.section-2 p{
+    padding: 2px;
+}
+.section-2 img{
+    padding-bottom: 9px;
+}
+.guitar{
+    font-weight: bold;
+}
+
+.travel::after{
+    content: " ⛺";
+}
+.education::after{
+    content: " 📙";
+}
+.football::after{
+ content: " ⚽";
+}
+.guitar:hover{
+    transition: 4s;
+    content: url(/image/guitar-.png);
+    cursor: pointer;
+}
+
+
+.section-1,.section-2{
+    border-radius: 9px;
+}
+footer {
+  text-align: center;
+  margin-top: 9px;
+}
+a{
+   text-decoration: none;
+}
